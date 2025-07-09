@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Header from "./components/Header";
+import HeroSection from "./components/HeroSection";
+import WelcomeSection from "./components/WelcomeSection";
+import ServicesSection from "./components/ServicesSection";
+import StatsSection from "./components/StatsSection";
+import Testimonials from "./components/Testimonials";
+import WhyChooseUs from "./components/WhyChooseUs";
+import ClientLogos from "./components/ClientLogos";
+import NewsSection from "./components/NewsSection";
+import Newsletter from "./components/Newsletter";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <HeroSection />
+      <WelcomeSection />
+      <ServicesSection />
+      <StatsSection />
+      <div className="testimonials-why-choose-us-container">
+        <Testimonials />
+        <WhyChooseUs />
+      </div>
+      <ClientLogos />
+      <NewsSection />
+      <Newsletter />
+      <Footer />
     </div>
   );
 }
